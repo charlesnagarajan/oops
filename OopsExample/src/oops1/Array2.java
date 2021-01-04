@@ -26,6 +26,10 @@ public class Array2 {
 		String y = str.replace("Y", "y");
 		y = y + "abc";
 		System.out.println(y);
+		
+		/ new add
+		 
+	        System.out.println("gitub succesfull");
 	}
 
 }
