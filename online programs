@@ -1,0 +1,20 @@
+package onlineprograms;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class MergeArray {
+
+	public static void main(String[] args) {
+
+		String st[] = { "a", "b", "c" };
+		String st1[] = { "e", "f", "g" };
+
+		ArrayList list = new ArrayList(Arrays.asList(st));
+		list.addAll(Arrays.asList(st1));
+		Object[] st2 = list.toArray();
+		System.out.println("mergedarray:" + (Arrays.toString(st2)));
+
+	}
+
+}
