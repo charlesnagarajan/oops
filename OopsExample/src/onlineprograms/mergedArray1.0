@@ -1,0 +1,19 @@
+package onlineprograms;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class MergedArray1 {
+	public static void main(String[] args) {
+
+		int a[] = { 1, 2, 3, 45, 6, 7, };
+		int b[] = { 8, 6, 89, 0, 54,94,97, };
+		int c = a.length;
+		int d = b.length;
+		int result[] = new int[c + d];
+		System.arraycopy(a, 0, result, 0, c);
+		System.arraycopy(b, 0, result, c, d);
+		System.out.println(Arrays.toString(result));
+	}
+
+}
