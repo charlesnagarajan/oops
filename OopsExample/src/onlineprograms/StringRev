@@ -1,0 +1,51 @@
+package onlineprograms;
+
+import java.util.HashMap;
+
+public class StringRev {
+
+	public static void main(String[] args) {
+
+		// reverse string
+		// input:KNOWLEDGE
+		// output:LEDGEWONK
+		String st = "KNOWLEDGE";
+		char[] st1 = st.toCharArray();
+		for (int i = 4; i <= 8; i++) {
+			System.out.println(st1[i]);
+		}
+		for (int j = 3; j >= 0; j--) {
+			System.out.println(st1[j]);
+		}
+
+		// Adding the string
+		// input:KNOWLEDGE
+		// output:KNOGIFWLEDGE
+		String s3 = "KNOWLEDGE";
+		String s4 = "GIF";
+		int index = 2;
+		StringBuffer str = new StringBuffer(s3);
+		str.insert(index + 1, s4);
+		System.out.println(str.toString());
+
+		// duplicate value counting the string
+		// output like this k=1,n=1,o=1,w=1,l=1,e=2,d=1,g=1
+
+		HashMap<Character, Integer> obj = new HashMap<Character, Integer>();
+		char[] arr = st.toCharArray();
+		for (char value : arr) {
+
+			if (Character.isAlphabetic(value)) {
+				if (obj.containsKey(value)) {
+					obj.put(value, obj.get(value) + 1);
+
+				} else {
+					obj.put(value, 1);
+				}
+			}
+		}
+
+		System.out.println(obj);
+	}
+
+}
